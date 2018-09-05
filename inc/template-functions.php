@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package The_Lord_is_My_Light_Photography
+ * @package The_Lord_is_my_Light
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function the_lord_is_my_light_photography_body_classes( $classes ) {
+function the_lord_is_my_light_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -24,14 +24,14 @@ function the_lord_is_my_light_photography_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'the_lord_is_my_light_photography_body_classes' );
+add_filter( 'body_class', 'the_lord_is_my_light_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function the_lord_is_my_light_photography_pingback_header() {
+function the_lord_is_my_light_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'the_lord_is_my_light_photography_pingback_header' );
+add_action( 'wp_head', 'the_lord_is_my_light_pingback_header' );

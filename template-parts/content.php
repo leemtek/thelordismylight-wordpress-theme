@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Lord_is_My_Light_Photography
+ * @package The_Lord_is_my_Light
  */
 
 ?>
@@ -22,21 +22,21 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				the_lord_is_my_light_photography_posted_on();
-				the_lord_is_my_light_photography_posted_by();
+				the_lord_is_my_light_posted_on();
+				the_lord_is_my_light_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php the_lord_is_my_light_photography_post_thumbnail(); ?>
+	<?php the_lord_is_my_light_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'the-lord-is-my-light-photography' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'the-lord-is-my-light' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -47,13 +47,13 @@
 		) );
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-lord-is-my-light-photography' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-lord-is-my-light' ),
 			'after'  => '</div>',
 		) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php the_lord_is_my_light_photography_entry_footer(); ?>
+		<?php the_lord_is_my_light_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

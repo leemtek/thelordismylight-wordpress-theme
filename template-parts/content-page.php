@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Lord_is_My_Light_Photography
+ * @package The_Lord_is_my_Light
  */
 
 ?>
@@ -14,14 +14,14 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php the_lord_is_my_light_photography_post_thumbnail(); ?>
+	<?php the_lord_is_my_light_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-lord-is-my-light-photography' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-lord-is-my-light' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -34,7 +34,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-lord-is-my-light-photography' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-lord-is-my-light' ),
 						array(
 							'span' => array(
 								'class' => array(),

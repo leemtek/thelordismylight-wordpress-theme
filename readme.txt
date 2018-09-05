@@ -1,4 +1,4 @@
-=== The Lord is My Light Photography ===
+=== The Lord is my Light ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called The Lord is My Light Photography.
+A starter theme called The Lord is my Light.
 
 == Description ==
 
-The official theme developed by Gabe Tumbaga.
+Theme for The Lord is my Light Photography by Edgar Tumbaga
 
 == Installation ==
 
@@ -25,7 +25,7 @@ The official theme developed by Gabe Tumbaga.
 
 = Does this theme support any plugins? =
 
-The Lord is My Light Photography includes support for Infinite Scroll in Jetpack.
+The Lord is my Light includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
