@@ -11,23 +11,18 @@
 
 ?>
 
-	</div><!-- #content -->
+  </main><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'the-lord-is-my-light-photography' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'the-lord-is-my-light-photography' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'the-lord-is-my-light-photography' ), 'the-lord-is-my-light-photography', '<a href="https://omga.be">Gabe Tumbaga</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+  <footer id="footer" class="site-footer">
+    <div class="inner">
+      <div class="site-info">
+        <small>
+          Photography by Edgar Tumbaga<br/>
+          thelordismylight.com &copy; 2019 Gabriel Tumbaga
+        </small>
+      </div><!-- .site-info -->
+    </div>
+  </footer><!-- #footer -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
