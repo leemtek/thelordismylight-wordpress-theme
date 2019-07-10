@@ -15,7 +15,7 @@
 get_header();
 ?>
 <?php if (is_super_admin($user_id)): ?>
-PAGE
+PAGE-CONTENT
 <?php endif; ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main">

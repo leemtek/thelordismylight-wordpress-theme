@@ -41,6 +41,8 @@ if ( ! function_exists( 'the_lord_is_my_light_photography_setup' ) ) :
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support( 'post-thumbnails' );
+    // ADDED BY GABE - lets set the thumb size to something smaller
+    set_post_thumbnail_size( 200, 200, array( 'center', 'center')  ); // 200 pixels wide by 200 pixels tall, crop from the center
 
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(

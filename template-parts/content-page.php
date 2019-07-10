@@ -8,7 +8,9 @@
  */
 
 ?>
-
+<?php if (is_super_admin($user_id)): ?>
+CONTENT-PAGE
+<?php endif; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <header class="entry-header">
     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

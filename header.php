@@ -43,8 +43,12 @@
           <?php foreach ($menuItems as $menuK => $menuV ): ?>
             <?php
               $current = ( $menuV->object_id == get_queried_object_id() ) ? 'active' : '';
+              // strip out all whitespace
+              $cleanID = preg_replace('/\s*/', '', $menuV->title);
+              // convert the string to all lowercase
+              $cleanID = strtolower($cleanID);
             ?>
-              <li class="nav-item <?php echo $current; ?>">
+              <li class="nav-item <?php echo $current; ?>" id="<?php echo "menu-" . $cleanID; ?>">
               <a class="nav-link" href="<?php echo $menuV->url; ?>"><?php echo $menuV->title; ?></a>
             </li>
           <?php endforeach; ?>
