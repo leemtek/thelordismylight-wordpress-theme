@@ -123,7 +123,9 @@ add_action( 'widgets_init', 'the_lord_is_my_light_photography_widgets_init' );
  */
 function the_lord_is_my_light_photography_scripts() {
   wp_enqueue_style( 'the-lord-is-my-light-photography-style', get_stylesheet_uri() );
-  $cacheBust = microtime();
+  //for dev, we'll use microtime so its always new. otherwise, lets use the latest date
+  //$cacheBust = microtime();
+  $cacheBust = "20190716";
   wp_enqueue_style( 'bootstrapcss', get_bloginfo('template_url') . '/css/bootstrap.min.css', false, $cacheBust, 'all' );
   wp_enqueue_style( 'themecss', get_bloginfo('template_url') . '/css/style.css', false, $cacheBust, 'all' );
   wp_enqueue_style( 'responsivecss', get_bloginfo('template_url') . '/css/responsive.css', false, $cacheBust, 'all' );

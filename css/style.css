@@ -142,3 +142,12 @@ main#content {
 .entry-footer span {
   display: block;
 }
+
+article.type-post {
+  margin-bottom: 20px;
+}
+/* this is an override so the gallery doesn't stretch items that are in a row by themselves.*/
+.wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item {
+  flex-grow: 0;
+}
+
